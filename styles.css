@@ -6,9 +6,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
 }
 
@@ -18,7 +18,7 @@ form {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px;
+    max-width: 100%;
     box-sizing: border-box;
 }
 
@@ -61,12 +61,12 @@ input[type="text"]:focus, input[type="number"]:focus {
 }
 
 textarea {
-    height: 120px;
+    height: 100px;
     resize: none;
 }
 
 .signature-line {
-    margin-top: 40px;
+    margin-top: 20px;
     text-align: right;
 }
 
@@ -77,8 +77,34 @@ textarea {
 }
 
 .signature-line hr {
-    width: 200px;
+    width: 150px;
     border: 0;
     border-bottom: 2px solid #333;
     margin-top: 8px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 480px) {
+    form {
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input[type="text"], input[type="number"], textarea {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    .signature-line hr {
+        width: 100px;
+    }
 }
