@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h2>Online Form</h2>
+    <form>
+        <label for="first-name">Όνομα:</label>
+        <input type="text" id="first-name" name="first-name" required>
+
+        <label for="last-name">Επώνυμο:</label>
+        <input type="text" id="last-name" name="last-name" required>
+
+        <label for="age">Ηλικία (δεν κλέβουμε μικρή):</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="nationality">Εθνικότητα(εδώ κι αν κλέβουμε...):</label>
+        <input type="text" id="nationality" name="nationality" required>
+
+        <label for="comments">Υπεύθυνη Δήλωση</label>
+        <textarea id="comments" name="comments" readonly>
+Με ατομική μου ευθύνη και γνωρίζοντας τις κυρώσεις που προβλέπονται από το ΑΦΕΝΤΙΚΟ: Δηλώνω ότι είμαι ένας χαζός μπόμπος και ζητάω άδεια για να πάω λίγες μέρες διακοπές. Επιπλέον, υπόσχομαι ότι θα είμαι φρόνιμη κι ότι μετά θα γυρίσω στην Αλβανία γιατί θα είναι και πιο κοντά.
+        </textarea>
+
+        <label for="notes">Επιπλέον:</label>
+        <textarea id="notes" name="notes" readonly>
+1. Υπογράφω και το στέλνω με σκριν στο ΑΦΕΝΤΙΚΟ.
+2. Στέλνω κι ένα πολύ ευγενικό γραπτό μήνυμα για να λάβω γραπτή απάντηση.
+        </textarea>
+
+        <div class="signature-line">
+            <p>Υπογραφή:</p>
+            <hr>
+        </div>
+    </form>
+
+</body>
+</html>
